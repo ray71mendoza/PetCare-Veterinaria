@@ -1,0 +1,96 @@
+:root {
+  /* Suite Vertex Core Tokens */
+  --vertex-slate-950: #020617;
+  --vertex-slate-900: #0f172a;
+  --vertex-slate-800: #1e293b;
+  --vertex-slate-700: #334155;
+  --vertex-slate-600: #475569;
+  --vertex-slate-500: #64748b;
+  --vertex-slate-400: #94a3b8;
+  --vertex-slate-300: #cbd5e1;
+  --vertex-slate-200: #e2e8f0;
+  --vertex-slate-100: #f1f5f9;
+  --vertex-slate-50: #f8fafc;
+
+  --vertex-indigo-600: #4f46e5;
+  --vertex-indigo-700: #4338ca;
+  --vertex-indigo-50: #eef2ff;
+
+  /* VERTEX Vet Vertical Specialized Tokens */
+  --vet-primary: #0d9488;         /* Teal 600 */
+  --vet-primary-hover: #0f766e;   /* Teal 700 */
+  --vet-primary-active: #115e59;  /* Teal 800 */
+  --vet-primary-light: #f0fdfa;   /* Teal 50 */
+  --vet-primary-muted: #ccfbf1;   /* Teal 100 */
+  --vet-primary-border: #99f6e4;  /* Teal 200 */
+
+  --vet-accent: #10b981;          /* Emerald 500 */
+  --vet-accent-hover: #059669;    /* Emerald 600 */
+  --vet-accent-light: #ecfdf5;    /* Emerald 50 */
+  --vet-accent-border: #a7f3d0;   /* Emerald 200 */
+
+  /* Semantic Alerts */
+  --vet-success: #10b981;
+  --vet-success-bg: #ecfdf5;
+  --vet-success-text: #065f46;
+
+  --vet-warning: #f59e0b;
+  --vet-warning-bg: #fffbeb;
+  --vet-warning-text: #92400e;
+
+  --vet-danger: #ef4444;
+  --vet-danger-bg: #fef2f2;
+  --vet-danger-text: #991b1b;
+
+  --vet-info: #0284c7;
+  --vet-info-bg: #f0f9ff;
+  --vet-info-text: #075985;
+
+  /* Surfaces & Layout */
+  --vet-bg: #f8fafc;
+  --vet-surface: #ffffff;
+  --vet-surface-elevated: #ffffff;
+  --vet-border: #e2e8f0;
+  --vet-border-subtle: #f1f5f9;
+
+  /* Typography */
+  --vet-font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --vet-font-display: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Shadows */
+  --vet-shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --vet-shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+  --vet-shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+  --vet-shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+}
+
+body {
+  font-family: var(--vet-font-sans);
+  background-color: var(--vet-bg);
+  color: var(--vertex-slate-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--vet-font-display);
+}
+
+/* Custom Scrollbar for Clinical Panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vertex-slate-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vertex-slate-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vertex-slate-400);
+}
